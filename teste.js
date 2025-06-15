@@ -1,6 +1,4 @@
 let name = "Ragnar";
-let vitorias = 50;
-let derrotas = 15;
 
 function calcularSaldo(vitorias, derrotas) {
   return vitorias - derrotas;
@@ -24,7 +22,7 @@ function determinarElo(saldo) {
   }
 }
 
-let saldo = calcularSaldo(vitorias, derrotas);
+let saldo = calcularSaldo(104, 10);
 let elo = determinarElo(saldo);
 
 console.log("O Heroi " + name + " tem de saldo de " + saldo + " e seu elo é " + elo + ".");
